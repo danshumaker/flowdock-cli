@@ -18,13 +18,13 @@ requirejs([
 ], function(program, config, auth, message) {
 
     program
-        .version('v0.0.1');
+        .version('v1.0.0');
 
     program
         .command('message')
         .description('Post a message')
-        .option('-m, --message <name>', 'Message to post', String)
-        .option('-f, --flow <name>', 'flow to post to', String)
+        .option('-m, --message <string message>', 'Message to post', String)
+        .option('-t, --tags <tags>', 'Tags to add to thread post', String)
         .option('-v, --verbose', 'verbose output')
         .action(function(options) {
                message.create(options);
@@ -46,7 +46,7 @@ requirejs([
             console.log();
             console.log('    Flowdock sub URL: company/flow -NOTE:Do not include protocol and flowdock.com url');
             console.log('    Username: user (for user@foo.bar)');
-            console.log('    Password: Your password');
+            console.log('    Password: Your password - NOTE: this will be base64 encoded and stored as a token');
             console.log('');
         });
 
