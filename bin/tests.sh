@@ -6,4 +6,5 @@ j='bin/flowdock.js'
 $j -h
 $j config -c
 $j config
-$j message "api test"
+$j message -m "api test"
+$j message -m "api test" -t "#tag-me"

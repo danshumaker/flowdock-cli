@@ -3,17 +3,19 @@ flowdock-cli
 
 [![NPM Version](https://badge.fury.io/js/flowdock-cli.svg)](https://npmjs.org/package/flowdock-cli)
 [![Package downloads](http://img.shields.io/npm/dm/flowdock-cli.svg)](https://npmjs.org/package/flowdock-cli)
+
 [flowdock API Reference](https://www.flowdock.com/api)
 
-A flowdock command line interface
+A flowdock command line interface - A simple script for all the commandline junkies out there.
 
 - Tested Features: (see bin/tests.sh --these all work)
   * Configuration creation
-  * Add message to flow
+  * Add message to a flow
 
 - TODO - Untested Features:
   * threads comments
   * more features
+  * integrate with (convert to) https://www.npmjs.com/package/flowdock
 
 ## Installation
 
@@ -41,7 +43,7 @@ Then, in your shell type:
 
       Config Help:
 
-        flowdock URL: https://api.flowdock.com
+        flowdock sub_url: company/flow-name
         Username: user (for user@foo.bar)
         Password: Your password
 
@@ -67,7 +69,7 @@ Then, in your shell type:
 
     ```
     $ flowdock config
-    flowdock URL: company/flow_name
+    flowdock suburl: company/flow_name
     Username: xxxxxx
     Password: xxxxxx
     Information stored!
@@ -81,8 +83,8 @@ Then, in your shell type:
 		Options:
 
 		-h, --help                output usage information
-		-f, --flow <flow>         Flow to post to
 		-m, --message <message>   Message to post
+		-t, --tags <tags>         Tags to add to post
 
 
 ## MIT License
