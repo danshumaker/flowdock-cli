@@ -3,28 +3,20 @@
   "description": "A Flowdock Command Line Interface",
   "version": "1.0.0",
   "author": "Dan Shumaker <danpshumaker@gmail.com> (https://danshumaker.github.io/)",
-  "contributors": [ ],
+  "contributors": [],
+  "homepage": "https://github.com/danshumaker/flowdock-cli",
   "scripts": {
     "test": "bin/tests.sh && exit 1",
     "patch-release": "npm version patch && npm publish && git push --follow-tags"
   },
   "dependencies": {
-    "alasql": "^0.4.5",
-    "async": "^2.6.0",
-    "cheerio": "^1.0.0-rc.3",
-    "cli-table": "^0.2.0",
-    "commander": "~1.1.1",
-    "dargs": "^5.1.0",
+    "commander": "^2.20.0",
     "fs": "0.0.1-security",
-    "jslint": "^0.12.1",
-    "moment": "^2.10.2",
-    "openurl": "^1.1.0",
-    "qs": "~> 1.0.0",
-    "requirejs": "~2.1.5",
-    "superagent": "~0.13.0"
+    "requirejs": "^2.3.6",
+    "superagent": "^5.0.5"
   },
   "engines": {
-    "node": ">= 0.8"
+    "node": ">= 10.0"
   },
   "keywords": [
     "flowdock",
@@ -32,7 +24,9 @@
     "client",
     "command",
     "cli",
-    "tool"
+    "tool",
+    "shell",
+    "script"
   ],
   "license": "MIT",
   "repository": {
